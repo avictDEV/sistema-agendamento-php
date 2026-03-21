@@ -1,25 +1,40 @@
 sistema-agendamento-php
 
-Projeto de sistema de agendamento em PHP utilizando programação orientada a objetos.
+Sistema de agendamento desenvolvido em PHP com foco em organização de horários para profissionais autônomos.
 
-Sistema de Agendamento para Nail Designer
-Descrição do Projeto
+Visão Geral
 
-O Sistema de Agendamento é uma aplicação web desenvolvida em PHP com o objetivo de automatizar o controle de horários de uma profissional de nail designer.
+O sistema de agendamento é uma aplicação web desenvolvida para facilitar o controle de horários de uma profissional de nail designer.
 
-A aplicação permite que clientes realizem agendamentos de forma simples, escolhendo serviço, data e horário disponíveis. Além disso, o sistema conta com um painel administrativo que permite o gerenciamento completo da agenda.
+A solução permite o cadastro, visualização e gerenciamento de agendamentos, garantindo organização da agenda e evitando conflitos de horários.
 
-O projeto foi estruturado com base nos conceitos de Programação Orientada a Objetos, organização em camadas e integração com banco de dados MySQL.
+O projeto foi construído com base em boas práticas de desenvolvimento, utilizando Programação Orientada a Objetos e separação de responsabilidades.
 
-Objetivo
+Problema
 
-Desenvolver uma aplicação prática aplicando conceitos fundamentais e intermediários de desenvolvimento web com PHP, incluindo:
+Profissionais autônomos frequentemente realizam agendamentos manualmente, o que pode gerar:
 
-Criação de classes
-Uso de atributos e métodos
-Conexão com banco de dados
-Organização de código
-Interface responsiva mobile-first
+Falta de organização
+Conflito de horários
+Dificuldade de controle da agenda
+Perda de clientes
+
+Solução
+
+A aplicação resolve esse problema oferecendo:
+
+Cadastro estruturado de agendamentos
+Validação de horários disponíveis
+Visualização organizada dos atendimentos
+Interface simples e responsiva
+
+Funcionalidades
+
+Cadastro de agendamentos
+Validação de horários duplicados
+Listagem de agendamentos
+Exclusão de registros
+Interface responsiva para dispositivos móveis
 
 Tecnologias Utilizadas
 
@@ -28,10 +43,22 @@ MySQL
 HTML5
 CSS3
 PDO
-Git
-GitHub
+Git e GitHub
 
-Estrutura do Projeto
+Arquitetura do Projeto
+
+O sistema segue uma organização baseada no padrão MVC simplificado:
+
+Model
+Responsável pela comunicação com o banco de dados
+
+Controller
+Responsável pela lógica da aplicação
+
+View
+Responsável pela interface com o usuário
+
+Estrutura de Pastas
 sistema-agendamento/
 │
 ├── index.php
@@ -57,45 +84,16 @@ sistema-agendamento/
 └── manifest.json
 Banco de Dados
 
-O sistema utiliza o banco de dados:
-
-nail_agendamento
+Banco de dados utilizado: nail_agendamento
 
 Tabela agendamentos:
 
-Campo	Tipo
-id	INT
-nome_cliente	VARCHAR
-servico	VARCHAR
-data	DATE
-horario	TIME
-criado_em	TIMESTAMP
-Funcionalidades do Sistema
-
-Cadastro de agendamentos
-Validação de horários disponíveis
-Listagem de agendamentos
-Exclusão de registros
-Interface responsiva
-
-Interface e Experiência do Usuário
-
-O layout foi desenvolvido com abordagem mobile-first, inspirado em interfaces modernas.
-
-Design limpo
-Cores suaves
-Botões acessíveis
-Navegação simples
-
-Como Executar o Projeto
-Instalar um servidor local como XAMPP ou WAMP
-Criar o banco de dados nail_agendamento no MySQL
-Criar a tabela conforme especificado
-Configurar o arquivo config/database.php
-Colocar o projeto na pasta htdocs
-Acessar no navegador
-
-http://localhost/sistema-agendamento
+id
+nome_cliente
+servico
+data
+horario
+criado_em
 
 Diagrama UML
 
@@ -129,16 +127,35 @@ Classe AgendamentoController
 Relação entre classes
 
 AgendamentoController -> Agendamento
+
+Interface
+
+O sistema foi desenvolvido com abordagem mobile-first, priorizando usabilidade em dispositivos móveis.
+
+Layout simples
+Foco em experiência do usuário
+Navegação intuitiva
+
+Como Executar o Projeto
+Instalar XAMPP ou WAMP
+Criar o banco de dados nail_agendamento
+Criar a tabela agendamentos
+Configurar o arquivo config/database.php
+Colocar o projeto na pasta htdocs
+Acessar no navegador
+
+http://localhost/sistema-agendamento
+
 Melhorias Futuras
 
 Dashboard com métricas
 Sistema de pagamento
 Multiusuários
-Notificações em tempo real
+Notificações automatizadas
 Versão PWA
 
 Autor
 
 Alan Victor
 
-Projeto desenvolvido para fins educacionais e prática em desenvolvimento web com PHP.
+Projeto desenvolvido com foco em prática de desenvolvimento web e organização de sistemas em PHP.
