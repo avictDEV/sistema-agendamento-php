@@ -1,8 +1,8 @@
-sistema-agendamento-php
+*sistema-agendamento-php*
 
 Sistema de agendamento desenvolvido em PHP com foco em organização de horários para profissionais autônomos.
 
-Visão Geral
+*Visão Geral*
 
 O sistema de agendamento é uma aplicação web desenvolvida para facilitar o controle de horários de uma profissional de nail designer.
 
@@ -10,7 +10,7 @@ A solução permite o cadastro, visualização e gerenciamento de agendamentos, 
 
 O projeto foi construído com base em boas práticas de desenvolvimento, utilizando Programação Orientada a Objetos e separação de responsabilidades.
 
-Problema
+*Problema*
 
 Profissionais autônomos frequentemente realizam agendamentos manualmente, o que pode gerar:
 
@@ -19,7 +19,7 @@ Conflito de horários
 Dificuldade de controle da agenda
 Perda de clientes
 
-Solução
+*Solução*
 
 A aplicação resolve esse problema oferecendo:
 
@@ -28,7 +28,7 @@ Validação de horários disponíveis
 Visualização organizada dos atendimentos
 Interface simples e responsiva
 
-Funcionalidades
+*Funcionalidades*
 
 Cadastro de agendamentos
 Validação de horários duplicados
@@ -36,7 +36,7 @@ Listagem de agendamentos
 Exclusão de registros
 Interface responsiva para dispositivos móveis
 
-Tecnologias Utilizadas
+*Tecnologias Utilizadas*
 
 PHP
 MySQL
@@ -45,7 +45,7 @@ CSS3
 PDO
 Git e GitHub
 
-Arquitetura do Projeto
+*Arquitetura do Projeto*
 
 O sistema segue uma organização baseada no padrão MVC simplificado:
 
@@ -58,7 +58,7 @@ Responsável pela lógica da aplicação
 View
 Responsável pela interface com o usuário
 
-Estrutura de Pastas
+*Estrutura de Pastas*
 sistema-agendamento/
 │
 ├── index.php
@@ -82,7 +82,7 @@ sistema-agendamento/
 │   └── images/
 │
 └── manifest.json
-Banco de Dados
+*Banco de Dados*
 
 Banco de dados utilizado: nail_agendamento
 
@@ -128,7 +128,7 @@ Relação entre classes
 
 AgendamentoController -> Agendamento
 
-Interface
+*Interface*
 
 O sistema foi desenvolvido com abordagem mobile-first, priorizando usabilidade em dispositivos móveis.
 
@@ -136,7 +136,7 @@ Layout simples
 Foco em experiência do usuário
 Navegação intuitiva
 
-Como Executar o Projeto
+*Como Executar o Projeto*
 Instalar XAMPP ou WAMP
 Criar o banco de dados nail_agendamento
 Criar a tabela agendamentos
@@ -146,7 +146,7 @@ Acessar no navegador
 
 http://localhost/sistema-agendamento
 
-Melhorias Futuras
+*Melhorias Futuras*
 
 Dashboard com métricas
 Sistema de pagamento
@@ -154,7 +154,7 @@ Multiusuários
 Notificações automatizadas
 Versão PWA
 
-Autor
+*Autor*
 
 Alan Victor
 
